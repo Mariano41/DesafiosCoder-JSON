@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto JS</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/variables.js"></script> 
+    <script defer src="js/basedatos.js"></script> 
+    <script defer src="js/index.js"></script>
+   
+</head>
+<body>
+    <article >
+        <h1 id="titulo"><b> Productos</b></h1>
+        <p id="parrafo"><u> Listado de productos disponibles:</u></p>
+        <div>
+            <span><input type="search" id="filtroProducto" placeholder="Ingresa parte del nombre del producto a buscar"></span>
+        </div>
+        <table>
+            <thead >
+               
+                <tr>
+                    <th class="Border">ID</th>
+                    <th class="Border">PRODUCTO</th>
+                    <th class="Border">PRECIO</th>
+                    <th class="Border">PRECIO FINAL</th>
+                    <th class="Border">AGREGAR</th>
+                </tr>
+            
+            </thead>
+            <tbody id="tabla">
+
+            </tbody>
+        </table>
+<footer>
+    <a href="carrito.html">
+        <button class="boton">CARRITO</button>
+    </a>
+
+    <button id="cotizar">COTIZAR</button>
+
+    <a href="agregarProdu.html">
+         <button class="boton" onclick="agregarProducto()">AGREGAR PRODUCTO</button>
+    </a>
+
+    <a href="contacto.html">
+        <button class="boton">CONTACTO</button>
+   </a>
+
+   <button class="ocultar" id="load"></button>
+</footer>
+
+</body>
+</html>

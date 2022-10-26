@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/variables.js"></script> 
+    <script defer src="js/agregarProdu.js"></script>
+</head>
+<body>
+    <article>
+        <h1 id="titulo">Agregar Productos</h1>
+        <p id="parrafo">Completa los datos del producto a ingresar:</p>
+        <form action="" autocomplete="off" method="POST">
+            <input type="number" id="inputID"  placeholder="Ingrese el ID del producto" tabindex="1" >
+            <input type="text" id="inputNombre" placeholder="Descripción del producto" tabindex="2" value="Ingrese el tipo de producto">
+            <input type="number" id="inputPrecio" min="0" placeholder="Ingrese el precio del producto" tabindex="3">
+            <button type="submit" id="agregar">AGREGAR</button>
+        </form>
+        </article>
+    <footer>
+    </footer>
+</body>
+</html>
